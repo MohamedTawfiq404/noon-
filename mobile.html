@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="egypt-ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>موبايلات</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    background-color: rgb(247, 245, 245);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    background-color:#ffe606 ;
+    height: 68px;
+}
+header .right img{
+    width: 55px;
+    margin-right: 10px;
+}
+header .center input{
+    padding: 7px 5px 7px 450px;
+    border: none;
+    border-radius: 5px;
+}
+header .left a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(3, 5, 56, 0.767);
+    transition: 0.2s ease;
+}
+header .left a:hover{
+    color: rgba(0, 0, 0, 0.534);
+}
+header .left i{
+    margin-right: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.596);
+    padding-left: 10px ;
+    color: rgba(3, 5, 56, 0.616);
+    transition: 0.2s ease;
+}
+header .left i:hover{
+    color: rgba(0, 0, 0, 0.534);
+}
+header .left #shoping{
+    border-left: none;
+}
+ul{
+    list-style: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li #all{
+    border-left: 1px solid rgba(108, 130, 190, 0.363);
+    color: rgb(48, 81, 172);
+}
+ul li i{
+    margin-right: 10px;
+}
+ul li a{
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+
+}
+ul li ul.dropdown li{
+    display: inline-block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.dropdown a:hover{
+    color: rgb(0, 119, 255);
+}
+ul li a:hover{
+    box-shadow: 0px 0px  6px rgba(0, 0, 0, 0.185);
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.visa img{
+    width: 100%;
+}
+.slide img{
+    width: 100%;
+}
+.honor img{
+    width: 100%;
+}
+.navsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.navsection img{
+    width: 100px;
+    margin: 20px;
+    opacity: 1;
+}
+.navsection img:hover{
+    opacity: 0.7;
+}
+.prandtitle{
+    background-color: white;
+}
+.prandtitle img{
+    width: 100%;
+}
+.prand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.prand img{
+    opacity: 1;
+}
+.prand img:hover{
+    opacity: 0.7;
+}
+#cardsh2{
+    color: rgb(31, 31, 31);
+    font-weight: 800;
+    text-align: start;
+    margin: 30px;
+}
+.mobilecards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform o.5s;
+    margin: 10px 0px;
+}
+.mobilecards .card{
+    background-color: white;
+    width: 250px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 0px 0.7px rgba(34, 34, 34, 0.185);
+}
+.mobilecards a{
+    text-decoration: none;
+    color: black;
+}
+.mobilecards .card img{
+    margin: 5px;
+    opacity: 1;
+}
+.mobilecards .card img:hover{
+    opacity: 0.7;
+}
+.mobilecards .card button{
+    margin: 5px;
+    display: inline-block;
+    color: rgba(26, 26, 36, 0.774);
+    padding:  8px;
+    border: none;
+    transition: 0.2s ease-in;
+    background-color: white;
+    cursor: pointer;
+}
+.mobilecards .card button:hover{
+    color: rgba(0, 0, 0, 0.877);
+}
+.mobilecards .card p{
+    font-size: small;
+    color: rgba(26, 26, 36, 0.774);
+}
+.mobilecards .card sup{
+    color: rgba(26, 26, 36, 0.774);
+
+}
+.mobilepricetitle{
+    background-color: white;
+}
+.mobilepricetitle img{
+    width: 100%;
+}
+.mobileprice{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobileprice img{
+    width: 200px;
+    opacity: 1;
+}
+.mobileprice img:hover{
+    opacity: 0.7;
+}
+.mobilepossibilitytitle{
+    background-color: white;
+}
+.mobilepossibilitytitle img{
+    width: 100%;
+}
+.mobilepossibility{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+.mobilepossibility img{
+    opacity: 1;
+}
+.mobilepossibility img:hover{
+    opacity: 0.7;
+}
+.mobilecategorytitle{
+    background-color: white;
+}
+.mobilecategorytitle img{
+    width: 100%;
+}
+.mobilecategory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.mobilecategory img{
+    opacity: 1;
+}
+.mobilecategory img:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+.helptitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(41, 40, 40);
+    height: 100px;
+    background-color: white;
+    border-top:1px solid  rgba(91, 106, 146, 0.473);
+    border-bottom:1px solid  rgba(91, 106, 146, 0.473);
+}
+.helptitle .helph2{
+    font-weight: 900;
+    margin-right: 10px;
+}
+.helptitle a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(32, 32, 32);
+}
+.helptitle a:hover{
+    color: rgba(32, 32, 32, 0.685);
+}
+.helptitle i{
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+.contactus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.contactus .elctronicssection{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.contactus .elctronicssection h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contactus .elctronicssection a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgb(69, 71, 77);
+    padding-bottom: 5px;
+}
+.contactus .elctronicssection a:hover{
+    color:black;
+}
+.contactus .clothessection{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.contactus .clothessection h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contactus .clothessection a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgb(35, 36, 39);
+    padding-bottom: 5px;
+}
+.contactus .clothessection a:hover{
+    color:black;
+}
+.contactus .butysection{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.contactus .butysection h3{
+    margin-bottom: 10px;
+}
+.contactus .butysection a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgb(35, 36, 39);
+    padding-bottom: 5px;
+}
+.contactus .butysection a:hover{
+    color:black;
+}
+.contactus .ketchensection{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.contactus .ketchensection h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contactus .ketchensection a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgb(35, 36, 39);
+    padding-bottom: 5px;
+}
+.contactus .ketchensection a:hover{
+    color:black;
+}
+.contactus .prandsection{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.contactus .prandsection h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contactus .prandsection a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: rgb(35, 36, 39);
+    padding-bottom: 5px;
+}
+.contactus .prandsection a:hover{
+    color:black;
+}
+.social{
+    background-color: white;
+    border-radius: 20px;
+    height: 150px;
+}
+.social h3{
+    color: rgb(35, 36, 39);
+    font-weight: 800;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+}
+.social i{
+    background-color: #ffe606;
+    color: rgba(9, 9, 10, 0.808);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    font-size: xx-large;
+}
+.social i:hover{
+    background-color: #ffe6069c;
+    color: rgba(9, 9, 10, 0.514);
+}
+.social #facebook{
+    padding: 8px 13px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+footer p{
+    color: rgba(73, 72, 72, 0.842);
+    font-weight:300;
+}
+footer .scroll-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: black;
+    background-color: #ffe606;
+    padding: 3px 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+footer .scroll-up:hover{
+    background-color: #f0dd32c5;
+}
+footer img{
+    margin-left: 20px;
+}
+footer .footerlinks a{
+    text-decoration: none;
+    color: rgba(73, 72, 72, 0.842);
+    font-weight:400;
+    margin-left: 20px;
+}
+footer .footerlinks a:hover{
+    border-bottom: 1px solid rgba(73, 72, 72, 0.842);
+}
+</style>
+<body>
+    <header id="header">
+        <div class="right">
+            <a href="/index.html"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="center">
+            <input type="search" name="search" id="search" placeholder="انت بتدور على ايه؟">
+        </div>
+
+        <div class="left">
+            <a href="#">تسجيل الدخول<i class="fa-regular fa-user"></i> </a>
+            <a href="#">المفضلة<i class="fa-regular fa-heart"></i></a>
+            <a href="#">عربة التسوق<i class="fa-solid fa-cart-shopping" id="shoping"></i></a>
+        </div>
+</header>
+
+<ul>
+    <li>
+        <a href="#" id="all">جميع الفئات<i class="fa-solid fa-caret-down"></i></a>
+        <ul class="dropdown">
+            <li><a href="/elcteonics.html">الإلكترونيات</a></li>
+            <li><a href="/mobile.html">موبايلات</a></li>
+            <li><a href="#">رجالية</a></li>
+            <li><a href="#">نسائية</a></li>
+            <li><a href="#">المنزل</a></li>
+            <li><a href="#">الجمال و العطور</a></li>
+            <li><a href="#">الأطفال و الألعاب</a></li>
+            <li><a href="#">سوبر ماركت</a></li>
+            <li><a href="/offers.html" style="color: rgb(194, 59, 59);">العروض</a></li>
+        </ul>
+    </li>
+    <li><a href="/elcteonics.html">الإلكترونيات</a></li>
+    <li><a href="/mobile.html">موبايلات</a></li>
+    <li><a href="#">رجالية</a></li>
+    <li><a href="#">نسائية</a></li>
+    <li><a href="#">المنزل</a></li>
+    <li><a href="#">الجمال و العطور</a></li>
+    <li><a href="#">الأطفال و الألعاب</a></li>
+    <li><a href="#">سوبر ماركت</a></li>
+    <li><a href="/offers.html" style="color: rgb(196, 42, 42);">العروض</a></li>
+    <li><a href="#social" style="color:#b9a702 ;">تواصل معنا</a></li>
+</ul>
+
+
+<div class="visa">
+    <a href="#"><img src="/img/mobilevisa.avif" alt=""></a>
+</div>
+
+
+<div class="slide">
+    <a href="#"><img src="/img/mobileslide.avif" alt=""></a>
+</div>
+
+<div class="honor">
+    <a href="#"><img src="/img/mobilehonorimg.avif" alt=""></a>
+</div>
+
+
+<div class="navsection">
+    <a href="#"><img src="/img/mobilenavsection1.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection2.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection3.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection4.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection5.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection6.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection7.avif" alt=""></a>
+    <a href="#"><img src="/img/mobilenavsection8.avif" alt=""></a>
+</div>
+
+
+<div class="prandtitle">
+    <img src="/img/mobileprand.avif" alt="">
+</div>
+
+<div class="prand">
+    <a href="#"><img src="/img/mobileprand1.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand2.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand3.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand4.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand5.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand6.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand7.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprand8.avif" alt=""></a>
+</div>
+
+<h2 id="cardsh2">مقترحة لك</h2>
+
+
+<div class="mobilecards">
+
+
+
+
+    <div class="card">
+        <a href="/iphone.html"><img src="./img/card1.avif" alt=""></a>
+        <p>iPhone 15 Pro Max 256GB Natural Titanium 5G With FaceTime - Middle East Version </p>
+        <button class="btncard"><i class="fa-solid fa-cart-plus"></i></button>
+        <span>63,500 جنيه</span> <sup><del>67,500 جنيه</del></sup>
+    </div>
+
+
+
+        <div class="card">
+            <a href="#"><img src="./img/card2.avif" alt=""></a>
+            <p>Galaxy S24 Ultra Dual SIM Titanium Gray 12GB RAM 256GB 5G - Middle East Version</p>
+            <button class="btncard"><i class="fa-solid fa-cart-plus"></i></button>
+            <span>49999 جنيه</span> <sup><del>60,999 جنيه</del></sup>
+        </div>
+        
+    
+
+
+        <div class="card">
+            <a href="#"><img src="./img/mobilecard1.avif" alt="" style="height: 300px;"></a>
+            <p>ريدمي باد SE تابلت بشاشة مقاس 11 بوصة بذاكرة رام 8 جيجابايت وذاكرة داخلية 256 جيجابايت ويدعم خاصية الواي فاي بلون رمادي داكن - إصدار عالمي</p>
+            <button class="btncard"><i class="fa-solid fa-cart-plus"></i></button>
+            <span>9,949 جنيه</span> <sup><del>10,499 جنيه</del></sup>
+        </div>
+        <div class="card">
+
+
+            <a href="#"><img src="./img/mobilecard2.avif" alt=""></a>
+            <p>C53 ثنائي شريحة الاتصال Champion Gold 6GB 128GB 4G - إصدار الشرق الأوسط </p>
+            <button class="btncard"><i class="fa-solid fa-cart-plus"></i></button>
+            <span>5,640 جنيه</span> <sup><del>8,999 جنيه</del></sup>
+        </div>
+        
+
+
+        <div class="card">
+                <a href="#"><img src="./img/card5.avif" alt=""></a>
+                <p>Galaxy A15 Dual Sim Blue Black 4GB RAM 128GB 4G - Middle East Version </p>
+                <button class="btncard"><i class="fa-solid fa-cart-plus"></i></button>
+                <span>6,500 جنيه</span> <sup><del>8,699 جنيه</del></sup>
+        </div>
+
+
+</div>
+
+<div class="mobilepricetitle">
+    <img src="/img/mobileprice.avif" alt="">
+</div>
+
+<div class="mobileprice">
+    <a href="#"><img src="/img/mobileprice1.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprice2.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprice3.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprice4.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprice5.avif" alt=""></a>
+    <a href="#"><img src="/img/mobileprice6.avif" alt=""></a>
+</div>
+
+<div class="mobilepossibilitytitle">
+    <img src="img/mobilepossibility.avif" alt="">
+</div>
+
+<div class="mobilepossibility">
+    <a href="#"><img src="img/mobilepossibility1.avif" alt=""></a>
+    <a href="#"><img src="img/mobilepossibility2.avif" alt=""></a>
+    <a href="#"><img src="img/mobilepossibility3.avif" alt=""></a>
+    <a href="#"><img src="img/mobilepossibility4.avif" alt=""></a>
+</div>
+
+<div class="mobilecategorytitle">
+    <img src="img/mobilecategory.avif" alt="">
+</div>
+
+<div class="mobilecategory">
+    <a href="#"><img src="img/mobilecategory1.avif" alt=""></a>
+    <a href="#"><img src="img/mobilecategory2.avif" alt=""></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="helptitle">
+    <div class="helph2">
+        <h2>نحن دائماً جاهزون لمساعدتك</h2>
+        <p>تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+    </div>
+    <div class="helpinfo">
+        
+        <a href="#"><i class="fa-solid fa-phone-flip"></i>16358</a>
+        <a href="#"><i class="fa-regular fa-envelope"></i>    egypt@noon.com </a>
+       
+    </div>
+ </div>
+
+
+
+ <div class="contactus" id="contactus">
+
+    
+    <div class="elctronicssection">
+        <h3>الإلكترونيات</h3>
+        <a href="#">الهواتف المتحركة</a>
+        <a href="#">أجهزة التابلت </a>
+        <a href="#">أجهزة الكمبيوتر المحمولة</a>
+        <a href="#">الأجهزة المنزلية</a>
+        <a href="#">الكاميرات والصور وتسجيل الفيديو</a>
+        <a href="#">التلفزيونات</a>
+        <a href="#">سماعات الرأس</a>
+        <a href="#">ألعاب الفيديو</a>
+        
+    </div>
+
+
+    <div class="clothessection">
+        <h3>الأزياء</h3>
+        <a href="#">أزياء نسائية</a>
+        <a href="#">زياء رجالية</a>
+        <a href="#">أزياء البنات</a>
+        <a href="#">أزياء الأولاد</a>
+        <a href="#">ساعات يد للرجال</a>
+        <a href="#">ساعات يد للنساء</a>
+        <a href="#">النظارات</a>
+        <a href="#">الأمتعة والحقائب</a>
+        
+    </div>
+
+
+
+    <div class="butysection">
+        <h3>الجمال</h3>
+        <a href="#">العطور النسائية</a>
+        <a href="#">العطور الرجالية</a>
+        <a href="#"> المكياج</a>
+        <a href="#"> العناية بالشعر</a>
+        <a href="#">العناية بالبشرة</a>
+        <a href="#">العناية الشخصية</a>
+        <a href="#">الأدوات والإكسسوارات</a>
+        
+    </div>
+
+
+    <div class="ketchensection">
+        <h3>المطبخ والأجهزة المنزلية</h3>
+         <a href="#">المطبخ ودوات الطعام</a>
+         <a href="#">مستلزمات السرير</a>
+         <a href="#">مستلزمات الحمام</a>
+         <a href="#">ديكورات المنازل</a>
+         <a href="#">الأجهزة المنزلية</a>
+         <a href="#">الأدوات وتحسين المنازل</a>
+         <a href="#">مستلزمات الحدائق</a>
+         <a href="#">تخزين وتنظيم منزلي</a>
+ 
+     </div> 
+
+    <div class="prandsection">
+       <h3>أفضل الماركات</h3>
+        <a href="#">أبل</a>
+        <a href="#">سامسونج</a>
+        <a href="#"> نايك</a>
+        <a href="#">راي بان</a>
+        <a href="#">تيفال</a>
+        <a href="#">لوريال باريس</a>
+        <a href="#">شيكو</a>
+        <a href="#">تورنيدو</a>
+
+    </div> 
+
+
+
+
+ </div>
+
+
+ <div class="social" id="social">
+    <h3>تواصل معنا</h3>
+    <i class="fa-brands fa-facebook-f" id="facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+ </div>
+ 
+
+ <footer>
+    <div class="footer-p">
+
+        <p><sup>©</sup> 2024 noon. كل الحقوق محفوظة</p>
+        <a href="#header" class="scroll-up"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="footerimges">
+    
+        <img src="./img/footer1.svg" alt="">
+        <img src="./img/footer2.svg" alt="">
+        <img src="./img/footer3.svg" alt="">
+        <img src="./img/footer6.svg" alt="">
+        <img src="./img/footer5.svg" alt="">
+
+    </div>
+
+    <div class="footerlinks">
+
+        <a href="#">فرص التوظيف</a>
+        <a href="#">سياسة الضمان</a>
+        <a href="#"> البيع معنا</a>
+        <a href="#">شروط الاستخدام</a>
+        <a href="#">شروط البيع</a>
+        <a href="#">سياسة الخصوصية</a>
+
+    </div>
+        
+ </footer>
+
+    
+</body>
+</html>
